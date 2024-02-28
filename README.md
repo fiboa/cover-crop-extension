@@ -1,15 +1,14 @@
-# Template Extension Specification
+# Management Practices Extension Specification
 
-- **Title:** Template
-- **Identifier:** <https://fiboa.github.io/extension-template/v0.1.0/schema.yaml>
-- **Property Name Prefix:** template
-- **Extension Maturity Classification:** Proposal/Candidate/Stable
-- **Owner**: @your-gh-handles @person2
+- **Title:** Management Practices
+- **Identifier:** https://fiboa.github.io/management-practices/v0.1.0/schema.yaml
+- **Property Name Prefix:** management
+- **Extension Maturity Classification:** Proposal
+- **Owner**: TBD
 
-This document explains the Template Extension to the
-[Field Boundaries for Agriculture (fiboa) Specification](https://github.com/fiboa/specification).
+This extension describes management practices for tillage and cover crop. 
 
-This is the place to add a short introduction.
+This could eventually expand to include other management practices like fertility, crop protection, manure, irrigation, residue management, etc.
 
 - Examples:
   - [GeoJSON](examples/geojson/)
@@ -24,10 +23,10 @@ The fields in the table below can be used in these parts of fiboa documents:
 - [ ] Collection
 - [x] Feature Properties
 
-| Property Name   | Type   | Description |
-| --------------- | ------ | ----------- |
-| template:field1 | string | **REQUIRED**. Describe the required field... |
-| template:field2 | int32  | Describe the field... |
+| Property Name      | Type   | Description |
+| ------------------ | ---------- | ----------- |
+| management:cover_crop | boolean  | Describe the field... |
+| management:cover_crop_type | enum  | Describe the field... |
 
 ## Contributing
 
