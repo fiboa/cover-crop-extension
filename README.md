@@ -1,14 +1,14 @@
-# Management Practices Extension Specification
+# Cover Crop Extension Specification
 
-- **Title:** Management Practices
+- **Title:** Cover Crop
 - **Identifier:** https://fiboa.github.io/management-practices/v0.1.0/schema.yaml
-- **Property Name Prefix:** management
+- **Property Name Prefix:** cover_crop
 - **Extension Maturity Classification:** Proposal
 - **Owner**: TBD
 
-This extension describes management practices for tillage and cover crop. 
+This extension describes cover crop management practices. 
 
-This could eventually expand to include other management practices like fertility, crop protection, manure, irrigation, residue management, etc.
+It started as a general extension for all types of management practices, but evolved to just be focused on cover crops. 
 
 - Examples:
   - [GeoJSON](examples/geojson/)
@@ -18,15 +18,15 @@ This could eventually expand to include other management practices like fertilit
 
 ## Properties
 
-The fields in the table below can be used in these parts of fiboa documents:
+The attributes in the table below can be used in these parts of fiboa documents:
 
 - [ ] Collection
 - [x] Feature Properties
 
 | Property Name      | Type   | Description |
 | ------------------ | ---------- | ----------- |
-| management:cover_crop | boolean  | Describe the field... |
-| management:cover_crop_type | enum  | Describe the field... |
+| cover_crop:present | boolean  | Whether there is cover crop on this field |
+| cover_crop:type | enum  | What type of cover crop. |
 
 ## Contributing
 
